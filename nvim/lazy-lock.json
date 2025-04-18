@@ -1,0 +1,12 @@
+{
+  "btw.nvim": { "branch": "master", "commit": "47f6419e90d3383987fd06e8f3e06a4bc032ac83" },
+  "clangd": { "branch": "master", "commit": "439b0626d1edc6bdd9ac91451b229e25ace48f0d" },
+  "lazy.nvim": { "branch": "main", "commit": "6c3bda4aca61a13a9c63f1c1d1b16b9d3be90d7a" },
+  "mini.nvim": { "branch": "main", "commit": "687fa868d869078194c02065628712982d971fd6" },
+  "null-ls.nvim": { "branch": "main", "commit": "0010ea927ab7c09ef0ce9bf28c2b573fc302f5a7" },
+  "nvim-lspconfig": { "branch": "master", "commit": "40f120c10ea4b87311175539a183c3b75eab95a3" },
+  "nvim-treesitter": { "branch": "master", "commit": "30654ee72a69e7c76a54b66d748dae088429e863" },
+  "plenary.nvim": { "branch": "master", "commit": "857c5ac632080dba10aae49dba902ce3abf91b35" },
+  "rust-analyzer": { "branch": "master", "commit": "16745db3f763b6a1a315a91e8f4191b6a7a9da63" },
+  "zls": { "branch": "master", "commit": "dbcfaac493ccee788e01a4d25a935f4fd05fe18c" }
+}

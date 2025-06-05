@@ -1,4 +1,7 @@
 
+
+local colorscheme = "custom"
+
 -- Bootstrap lazy.nvim
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not (vim.uv or vim.loop).fs_stat(lazypath) then
@@ -28,7 +31,6 @@ require("lazy").setup({
   },
 })
 
-require("theme")
 vim.opt.number = true
 vim.opt.relativenumber = true
 -- Global settings for 4 spaces as tabs
@@ -36,10 +38,10 @@ vim.opt.tabstop = 4
 vim.opt.shiftwidth = 4
 vim.opt.expandtab = true
 vim.opt.softtabstop = 4
-
+vim.opt.termguicolors = true
 -- Optional: Filetype-specific settings (override global if needed)
 vim.api.nvim_create_autocmd("FileType", {
-  pattern = { "lua", "python", "javascript" },
+  pattern = { "lua", "python", "javascript", "rust" },
   callback = function()
     vim.opt_local.tabstop = 4
     vim.opt_local.shiftwidth = 4
@@ -48,4 +50,5 @@ vim.api.nvim_create_autocmd("FileType", {
   end,
 })
 
-vim.opt.guicursor = "a:block"
+require("colorscheme.black_metal")
+-- vim.cmd("colorscheme " .. colorscheme)
